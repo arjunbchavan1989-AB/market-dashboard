@@ -1,0 +1,59 @@
+{
+  "SECTOR_COLORS": {
+    "Broad Market": "#9e9e9e",
+    "Banking": "#ff5722",
+    "IT": "#3f51b5",
+    "Pharma": "#e91e63",
+    "Auto": "#4caf50",
+    "Commodities": "#8b6914",
+    "Global": "#00bcd4",
+    "Infra & PSU": "#673ab7",
+    "FMCG": "#8bc34a"
+  },
+  "TICKER_TO_SECTOR": {
+    "NIFTYBEES": "Broad Market",
+    "JUNIORBEES": "Broad Market",
+    "MID150BEES": "Broad Market",
+    "ITBEES": "IT",
+    "BANKBEES": "Banking",
+    "PHARMABEES": "Pharma",
+    "AUTOBEES": "Auto",
+    "GOLDBEES": "Commodities",
+    "SILVERBEES": "Commodities",
+    "MON100": "Global",
+    "PSUBNKBEES": "Infra & PSU",
+    "CPSEETF": "Infra & PSU",
+    "FMCGIETF": "FMCG",
+    "INFRABEES": "Infra & PSU",
+    "LIQUIDBEES": "Broad Market"
+  },
+  "Industries_COLORS": {
+    "NIFTYBEES": "#9e9e9e",
+    "JUNIORBEES": "#9e9e9e",
+    "MID150BEES": "#9e9e9e",
+    "ITBEES": "#3f51b5",
+    "BANKBEES": "#ff5722",
+    "PHARMABEES": "#e91e63",
+    "AUTOBEES": "#4caf50",
+    "GOLDBEES": "#8b6914",
+    "SILVERBEES": "#8b6914",
+    "MON100": "#00bcd4",
+    "PSUBNKBEES": "#673ab7",
+    "CPSEETF": "#673ab7",
+    "FMCGIETF": "#8bc34a",
+    "INFRABEES": "#673ab7",
+    "LIQUIDBEES": "#9e9e9e"
+  },
+  "SECTOR_ORDER": [
+    "Broad Market",
+    "Banking",
+    "IT",
+    "Pharma",
+    "Auto",
+    "Commodities",
+    "Global",
+    "Infra & PSU",
+    "FMCG"
+  ],
+  "default_symbol": "NIFTYBEES"
+}
