@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇮🇳 Indian Market Dashboard</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); color: white; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 20px; min-height: 100vh; }
-.header { text-align: center; margin-bottom: 30px; }
-.header h1 { font-size: 2.5em; margin-bottom: 10px; }
-.timestamp { color: #888; font-size: 0.9em; }
-.section { margin-bottom: 40px; }
-.section h2 { background: #333;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇮🇳 Indian Market Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); 
+            color: white; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
+            padding: 20px; 
+            min-height: 100vh;
+        }
+        .header { text-align: center; margin-bottom: 30px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .timestamp { color: #888; font-size: 0.9em; }
+        .section { margin-bottom: 40px; }
+        .section h2 { 
+            background: #333; padding: 15px; 
+            border-radius: 10px 10px 0 0; 
+            margin-bottom: 0; 
+            font-size: 1.3em;
+        }
+        .events { background: #222; padding: 20px; border-radius: 0 0 10px 10px; }
+        .event { padding: 10px; border-bottom: 1px solid #444; }
+        .event:last-child { border-bottom: none; }
+        .group { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .ticker { 
+            background: #333; padding: 15px; border-radius: 10px; 
+            transition: all 0.3s; cursor: pointer;
+            border-left: 5px solid #666;
+        }
+        .ticker:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        .positive { border-left-color: #4ade80 !important; }
+        .negative { border-left-color: #ef4444 !important; }
+        .ticker-name { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }
+        .change { font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+        .rs-chart img { height: 25px; width: 80px; object-fit: cover; border-radius: 4px; margin: 5px 0; }
+        .metrics { font-size: 0.85em; color: #ccc; }
+        .loading { text-align: center; padding: 50px; font-size: 1.2em; }
+        .error { background: #ef4444; color: white; padding: 20px; border-radius: 10px; text-align: center; }
+        @media (max-width: 768px) { .group { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇮🇳 Indian Market Dashboard</h1>
+        <div class="timestamp" id="timestamp">Loading...</div>
+    </div>
+    
+    <div class="section">
+        <h2>📅 Upcoming Events</h2>
+        <div class="events" id="events">Loading events...</div>
+    </div>
+    
+    <div id="groups" class="section"></div>
+    
+    <div style="text-align: center; margin-top: 40px; color: #888; font-size: 0.8em;">
+        Auto-updates daily | Built with ❤️ for Indian markets
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const [snapshotRes, eventsRes] = await Promise.all([
+                    fetch('data/snapshot.json'),
+                    fetch('data/events.json')
+                ]);
+                
+                if (!snapshotRes.ok || !eventsRes.ok) throw new Error('Data not found');
+                
+                const snapshot = await snapshotRes.json();
+                const events = await eventsRes.json();
+                
+                document.getElementById('timestamp').textContent = 
+                    `Updated: ${new Date(snapshot.built_at).toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'})} IST`;
+                
+                // Events
+                const eventsDiv = document.getElementById('events');
+                if (events.length) {
+                    eventsDiv.innerHTML = events.map(e => 
+                        `<div class="event">${e.date} ${e.time}<br><strong>${e.event}</strong></div>`
+                    ).join('');
+                } else {
+                    eventsDiv.innerHTML = '<div>No upcoming high-impact events</div>';
+                }
+                
+                // Groups
+                const groupsDiv = document.getElementById('groups');
+                Object.entries(snapshot.groups).forEach(([groupName, tickers]) => {
+                    const section = document.createElement('div');
+                    section.className = 'section';
+                    section.innerHTML = `<h2>${groupName} (${tickers.length})</h2>`;
+                    const groupDiv = document.createElement('div');
+                    groupDiv.className = 'group';
+                    
+                    tickers.forEach(t => {
+                        const tickerDiv = document.createElement('div');
+                        tickerDiv.className = `ticker ${t.daily > 0 ? 'positive' : 'negative'}`;
+                        tickerDiv.innerHTML = `
+                            <div class="ticker-name">${t.ticker}</div>
+                            <div class="change">${t.daily?.toFixed(2)}%</div>
+                            ${t.rs_chart ? `<div class="rs-chart"><img src="${t.rs_chart}" alt="RS Chart" loading="lazy"></div>` : ''}
+                            <div class="metrics">
+                                RS: ${t.rs || '-'} | ABC: ${t.abc || '-'} | ATR: ${t.atr_pct || '-'}%
+                            </div>
+                        `;
+                        groupDiv.appendChild(tickerDiv);
+                    });
+                    
+                    section.appendChild(groupDiv);
+                    groupsDiv.appendChild(section);
+                });
+                
+            } catch (error) {
+                document.body.innerHTML = `
+                    <div class="error">
+                        <h2>⚠️ Data Update Required</h2>
+                        <p>Run <code>python scripts/build_data.py</code> locally or wait for auto-update.</p>
+                        <p><strong>Error:</strong> ${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Load data
+        loadData();
+        
+        // Refresh every 30 min
+        setInterval(loadData, 30 * 60 * 1000);
+    </script>
+</body>
+</html>
