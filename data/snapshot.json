@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-04-02T10:11:14.348608Z",
+  "built_at": "2026-04-03T10:02:01.981929Z",
   "groups": {
     "Broad Market ETFs": [
       {
@@ -10,7 +10,7 @@
         "20d": -8.63,
         "atr_pct": 2.3,
         "dist_sma50_atr": -3.47,
-        "rs": 5.0,
+        "rs": 15.0,
         "rs_chart": "data/charts/NIFTYBEES.png",
         "long": [],
         "short": [],
@@ -24,7 +24,7 @@
         "20d": -9.62,
         "atr_pct": 3.2,
         "dist_sma50_atr": -2.32,
-        "rs": 15.0,
+        "rs": 20.0,
         "rs_chart": "data/charts/JUNIORBEES.png",
         "long": [],
         "short": [],
