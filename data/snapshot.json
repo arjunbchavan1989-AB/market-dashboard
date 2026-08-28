@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-08-27T19:49:34.523529Z",
+  "built_at": "2026-08-28T20:50:05.562315Z",
   "groups": {
     "Broad Market ETFs": [
       {
@@ -10,7 +10,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 0.0,
+        "rs": 95.0,
         "rs_chart": "data/charts/NIFTYBEES.png",
         "long": [],
         "short": [],
@@ -32,10 +32,10 @@
       },
       {
         "ticker": "MID150BEES",
-        "daily": -0.13,
-        "intra": 1.29,
-        "5d": 0.5,
-        "20d": 2.31,
+        "daily": 0.05,
+        "intra": 0.05,
+        "5d": 0.55,
+        "20d": 1.73,
         "atr_pct": 1.5,
         "dist_sma50_atr": 1.21,
         "rs": 100.0,
@@ -52,7 +52,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 95.0,
+        "rs": 100.0,
         "rs_chart": "data/charts/SMALLCAP.png",
         "long": [],
         "short": [],
@@ -68,7 +68,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 15.0,
+        "rs": 30.0,
         "rs_chart": "data/charts/BANKBEES.png",
         "long": [],
         "short": [],
@@ -90,12 +90,12 @@
       },
       {
         "ticker": "PHARMABEES",
-        "daily": 0.33,
-        "intra": -0.58,
-        "5d": 1.29,
-        "20d": 1.66,
-        "atr_pct": 2.5,
-        "dist_sma50_atr": 1.33,
+        "daily": 0.8,
+        "intra": -0.64,
+        "5d": 2.51,
+        "20d": 1.8,
+        "atr_pct": 2.4,
+        "dist_sma50_atr": 1.62,
         "rs": 100.0,
         "rs_chart": "data/charts/PHARMABEES.png",
         "long": [],
@@ -118,13 +118,13 @@
       },
       {
         "ticker": "FMCGIETF",
-        "daily": -0.76,
-        "intra": -0.76,
-        "5d": -1.84,
-        "20d": -4.92,
-        "atr_pct": 2.0,
-        "dist_sma50_atr": -1.85,
-        "rs": 55.0,
+        "daily": -0.53,
+        "intra": -0.91,
+        "5d": -1.68,
+        "20d": -4.51,
+        "atr_pct": 1.9,
+        "dist_sma50_atr": -2.1,
+        "rs": 80.0,
         "rs_chart": "data/charts/FMCGIETF.png",
         "long": [],
         "short": [],
@@ -138,7 +138,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 30.0,
+        "rs": 75.0,
         "rs_chart": "data/charts/PSUBNKBEES.png",
         "long": [],
         "short": [],
@@ -146,13 +146,13 @@
       },
       {
         "ticker": "CONSUMBEES",
-        "daily": -0.41,
-        "intra": -0.79,
-        "5d": -0.99,
-        "20d": -0.96,
+        "daily": -0.48,
+        "intra": -0.49,
+        "5d": -1.04,
+        "20d": -1.45,
         "atr_pct": 1.4,
-        "dist_sma50_atr": 0.68,
-        "rs": 90.0,
+        "dist_sma50_atr": 0.29,
+        "rs": 75.0,
         "rs_chart": "data/charts/CONSUMBEES.png",
         "long": [],
         "short": [],
@@ -182,7 +182,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 95.0,
+        "rs": 100.0,
         "rs_chart": "data/charts/SILVERBEES.png",
         "long": [],
         "short": [],
@@ -224,7 +224,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 90.0,
+        "rs": 85.0,
         "rs_chart": "data/charts/CPSEETF.png",
         "long": [],
         "short": [],
@@ -240,7 +240,7 @@
         "20d": null,
         "atr_pct": NaN,
         "dist_sma50_atr": NaN,
-        "rs": 75.0,
+        "rs": 70.0,
         "rs_chart": "data/charts/MON100.png",
         "long": [],
         "short": [],
@@ -277,8 +277,8 @@
         NaN
       ],
       "20d": [
-        2.31,
-        2.31
+        1.73,
+        1.73
       ]
     },
     "Sector ETFs": {
@@ -295,8 +295,8 @@
         NaN
       ],
       "20d": [
-        -4.92,
-        1.66
+        -4.51,
+        1.8
       ]
     },
     "Commodity & Alternatives": {
