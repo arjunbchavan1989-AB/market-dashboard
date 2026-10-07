@@ -1,16 +1,16 @@
 {
-  "built_at": "2026-10-06T15:55:16.055152Z",
+  "built_at": "2026-10-07T16:24:57.483709Z",
   "groups": {
     "Broad Market ETFs": [
       {
         "ticker": "NIFTYBEES",
-        "daily": 0.93,
-        "intra": 0.01,
-        "5d": -0.61,
+        "daily": 0.12,
+        "intra": -0.39,
+        "5d": -0.72,
         "20d": null,
-        "atr_pct": 1.4,
-        "dist_sma50_atr": -3.45,
-        "rs": 98.0,
+        "atr_pct": 1.3,
+        "dist_sma50_atr": -3.8,
+        "rs": 0.0,
         "rs_chart": "data/charts/NIFTYBEES.png",
         "long": [],
         "short": [],
@@ -18,13 +18,13 @@
       },
       {
         "ticker": "JUNIORBEES",
-        "daily": 1.51,
-        "intra": 0.74,
-        "5d": -0.41,
+        "daily": 0.47,
+        "intra": -1.1,
+        "5d": -1.27,
         "20d": null,
         "atr_pct": 1.9,
-        "dist_sma50_atr": -1.97,
-        "rs": 35.0,
+        "dist_sma50_atr": -2.4,
+        "rs": 55.0,
         "rs_chart": "data/charts/JUNIORBEES.png",
         "long": [],
         "short": [],
@@ -32,12 +32,12 @@
       },
       {
         "ticker": "MID150BEES",
-        "daily": -3.68,
-        "intra": 0.56,
-        "5d": -1.93,
+        "daily": -0.51,
+        "intra": -0.95,
+        "5d": -3.03,
         "20d": null,
-        "atr_pct": 2.3,
-        "dist_sma50_atr": -2.19,
+        "atr_pct": 2.2,
+        "dist_sma50_atr": -2.38,
         "rs": 65.0,
         "rs_chart": "data/charts/MID150BEES.png",
         "long": [],
@@ -46,12 +46,12 @@
       },
       {
         "ticker": "SMALLCAP",
-        "daily": 1.71,
-        "intra": 1.34,
-        "5d": 0.73,
+        "daily": 2.06,
+        "intra": -1.52,
+        "5d": 1.53,
         "20d": null,
-        "atr_pct": 1.9,
-        "dist_sma50_atr": -0.19,
+        "atr_pct": 2.1,
+        "dist_sma50_atr": 0.02,
         "rs": 100.0,
         "rs_chart": "data/charts/SMALLCAP.png",
         "long": [],
@@ -62,13 +62,13 @@
     "Sector ETFs": [
       {
         "ticker": "BANKBEES",
-        "daily": 0.78,
-        "intra": -0.34,
-        "5d": 0.73,
+        "daily": 0.82,
+        "intra": -1.35,
+        "5d": 1.03,
         "20d": null,
-        "atr_pct": 1.3,
-        "dist_sma50_atr": -2.54,
-        "rs": 90.0,
+        "atr_pct": 1.4,
+        "dist_sma50_atr": -2.19,
+        "rs": 100.0,
         "rs_chart": "data/charts/BANKBEES.png",
         "long": [],
         "short": [],
@@ -76,13 +76,13 @@
       },
       {
         "ticker": "ITBEES",
-        "daily": -0.67,
-        "intra": -1.24,
-        "5d": -0.19,
+        "daily": -1.44,
+        "intra": -1.87,
+        "5d": 0.32,
         "20d": null,
-        "atr_pct": 2.6,
-        "dist_sma50_atr": -2.46,
-        "rs": 20.0,
+        "atr_pct": 2.7,
+        "dist_sma50_atr": -2.64,
+        "rs": 0.0,
         "rs_chart": "data/charts/ITBEES.png",
         "long": [],
         "short": [],
@@ -90,12 +90,12 @@
       },
       {
         "ticker": "PHARMABEES",
-        "daily": 1.68,
-        "intra": 1.68,
-        "5d": -0.94,
+        "daily": -0.51,
+        "intra": -0.51,
+        "5d": -2.27,
         "20d": null,
-        "atr_pct": 3.2,
-        "dist_sma50_atr": -0.05,
+        "atr_pct": 3.0,
+        "dist_sma50_atr": -0.23,
         "rs": 80.0,
         "rs_chart": "data/charts/PHARMABEES.png",
         "long": [],
@@ -104,12 +104,12 @@
       },
       {
         "ticker": "AUTOBEES",
-        "daily": 0.36,
-        "intra": -0.32,
-        "5d": -3.53,
+        "daily": -0.73,
+        "intra": -1.4,
+        "5d": -4.33,
         "20d": null,
-        "atr_pct": 1.9,
-        "dist_sma50_atr": -4.69,
+        "atr_pct": 2.0,
+        "dist_sma50_atr": -4.96,
         "rs": 0.0,
         "rs_chart": "data/charts/AUTOBEES.png",
         "long": [],
@@ -118,12 +118,12 @@
       },
       {
         "ticker": "FMCGIETF",
-        "daily": 1.51,
-        "intra": -0.96,
-        "5d": -0.76,
+        "daily": -0.79,
+        "intra": -0.79,
+        "5d": -0.7,
         "20d": null,
-        "atr_pct": 2.1,
-        "dist_sma50_atr": -2.1,
+        "atr_pct": 2.2,
+        "dist_sma50_atr": -2.23,
         "rs": 55.0,
         "rs_chart": "data/charts/FMCGIETF.png",
         "long": [],
@@ -132,13 +132,13 @@
       },
       {
         "ticker": "PSUBNKBEES",
-        "daily": 0.21,
-        "intra": 0.11,
-        "5d": -0.9,
+        "daily": 0.91,
+        "intra": 0.69,
+        "5d": 0.46,
         "20d": null,
-        "atr_pct": 1.9,
-        "dist_sma50_atr": -2.79,
-        "rs": 50.0,
+        "atr_pct": 2.0,
+        "dist_sma50_atr": -2.12,
+        "rs": 90.0,
         "rs_chart": "data/charts/PSUBNKBEES.png",
         "long": [],
         "short": [],
@@ -146,13 +146,13 @@
       },
       {
         "ticker": "CONSUMBEES",
-        "daily": 0.98,
-        "intra": 0.98,
-        "5d": -2.13,
+        "daily": -0.66,
+        "intra": -0.66,
+        "5d": -2.06,
         "20d": null,
         "atr_pct": 1.8,
-        "dist_sma50_atr": -3.2,
-        "rs": 0.0,
+        "dist_sma50_atr": -3.57,
+        "rs": 10.0,
         "rs_chart": "data/charts/CONSUMBEES.png",
         "long": [],
         "short": [],
@@ -162,13 +162,13 @@
     "Commodity & Alternatives": [
       {
         "ticker": "GOLDBEES",
-        "daily": 0.02,
-        "intra": 0.34,
-        "5d": 0.24,
+        "daily": -0.41,
+        "intra": -0.31,
+        "5d": 0.36,
         "20d": null,
-        "atr_pct": 1.3,
-        "dist_sma50_atr": -1.94,
-        "rs": 15.0,
+        "atr_pct": 1.2,
+        "dist_sma50_atr": -2.32,
+        "rs": 50.0,
         "rs_chart": "data/charts/GOLDBEES.png",
         "long": [],
         "short": [],
@@ -176,13 +176,13 @@
       },
       {
         "ticker": "SILVERBEES",
-        "daily": 0.95,
-        "intra": 0.29,
-        "5d": 0.02,
+        "daily": -1.34,
+        "intra": -0.48,
+        "5d": -0.06,
         "20d": null,
-        "atr_pct": 1.8,
-        "dist_sma50_atr": -1.91,
-        "rs": 35.0,
+        "atr_pct": 1.9,
+        "dist_sma50_atr": -2.32,
+        "rs": 85.0,
         "rs_chart": "data/charts/SILVERBEES.png",
         "long": [],
         "short": [],
@@ -195,8 +195,8 @@
         "5d": 0.0,
         "20d": null,
         "atr_pct": 0.1,
-        "dist_sma50_atr": -0.01,
-        "rs": 80.0,
+        "dist_sma50_atr": 0.01,
+        "rs": 90.0,
         "rs_chart": "data/charts/LIQUIDBEES.png",
         "long": [],
         "short": [],
@@ -204,12 +204,12 @@
       },
       {
         "ticker": "GILT5YBEES",
-        "daily": -0.29,
-        "intra": 0.18,
-        "5d": -0.24,
+        "daily": -0.14,
+        "intra": -0.21,
+        "5d": -0.38,
         "20d": null,
-        "atr_pct": 1.3,
-        "dist_sma50_atr": -0.64,
+        "atr_pct": 1.4,
+        "dist_sma50_atr": -0.63,
         "rs": 60.0,
         "rs_chart": "data/charts/GILT5YBEES.png",
         "long": [],
@@ -218,13 +218,13 @@
       },
       {
         "ticker": "CPSEETF",
-        "daily": 0.18,
-        "intra": -0.17,
-        "5d": -1.6,
+        "daily": -1.08,
+        "intra": -2.39,
+        "5d": -2.45,
         "20d": null,
-        "atr_pct": 1.9,
-        "dist_sma50_atr": -1.86,
-        "rs": 55.0,
+        "atr_pct": 2.1,
+        "dist_sma50_atr": -2.09,
+        "rs": 80.0,
         "rs_chart": "data/charts/CPSEETF.png",
         "long": [],
         "short": [],
@@ -234,12 +234,12 @@
     "Global Context": [
       {
         "ticker": "MON100",
-        "daily": 2.79,
-        "intra": -0.42,
-        "5d": 2.03,
+        "daily": 2.06,
+        "intra": -1.96,
+        "5d": 3.89,
         "20d": null,
         "atr_pct": 2.6,
-        "dist_sma50_atr": 0.37,
+        "dist_sma50_atr": 0.53,
         "rs": 100.0,
         "rs_chart": "data/charts/MON100.png",
         "long": [],
@@ -248,12 +248,12 @@
       },
       {
         "ticker": "MASPTOP50",
-        "daily": 9.37,
-        "intra": 2.67,
-        "5d": 12.7,
+        "daily": 9.08,
+        "intra": 2.63,
+        "5d": 17.4,
         "20d": null,
-        "atr_pct": 7.4,
-        "dist_sma50_atr": 3.49,
+        "atr_pct": 6.7,
+        "dist_sma50_atr": 4.64,
         "rs": 100.0,
         "rs_chart": "data/charts/MASPTOP50.png",
         "long": [],
@@ -265,16 +265,16 @@
   "column_ranges": {
     "Broad Market ETFs": {
       "daily": [
-        -3.68,
-        1.71
+        -0.51,
+        2.06
       ],
       "intra": [
-        0.01,
-        1.34
+        -1.52,
+        -0.39
       ],
       "5d": [
-        -1.93,
-        0.73
+        -3.03,
+        1.53
       ],
       "20d": [
         -30,
@@ -283,16 +283,16 @@
     },
     "Sector ETFs": {
       "daily": [
-        -0.67,
-        1.68
+        -1.44,
+        0.91
       ],
       "intra": [
-        -1.24,
-        1.68
+        -1.87,
+        0.69
       ],
       "5d": [
-        -3.53,
-        0.73
+        -4.33,
+        1.03
       ],
       "20d": [
         -30,
@@ -301,16 +301,16 @@
     },
     "Commodity & Alternatives": {
       "daily": [
-        -0.29,
-        0.95
+        -1.34,
+        0.0
       ],
       "intra": [
-        -0.17,
-        0.34
+        -2.39,
+        0.0
       ],
       "5d": [
-        -1.6,
-        0.24
+        -2.45,
+        0.36
       ],
       "20d": [
         -30,
@@ -319,16 +319,16 @@
     },
     "Global Context": {
       "daily": [
-        2.79,
-        9.37
+        2.06,
+        9.08
       ],
       "intra": [
-        -0.42,
-        2.67
+        -1.96,
+        2.63
       ],
       "5d": [
-        2.03,
-        12.7
+        3.89,
+        17.4
       ],
       "20d": [
         -30,
